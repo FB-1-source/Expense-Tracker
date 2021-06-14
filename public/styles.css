@@ -1,0 +1,149 @@
+body {
+  color: white;
+  background-color: #243b55;
+  font-family: "Gill Sans", sans-serif;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.top h1 {
+  font-size: 45px;
+}
+
+.both {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin-top: -10rem;
+}
+
+.combbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box1 {
+  margin-top: 2rem;
+  border-style: solid;
+  border-color: white;
+  border-radius: 10px;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 90vh;
+  background: #141e30;
+  background: -webkit-linear-gradient(to right, #243b55, #141e30);
+  background: linear-gradient(to right, #243b55, #141e30);
+}
+
+.tb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tb input {
+  height: 40px;
+  width: 200px;
+  margin-right: 1rem;
+}
+
+.btn1 {
+  margin-left: 1rem;
+}
+
+.data {
+  margin-top: 2rem;
+  border-style: solid;
+  border-color: white;
+  height: 50vh;
+  border-radius: 10px;
+  width: 50%;
+  overflow: auto;
+  background: #141e30;
+  background: -webkit-linear-gradient(to right, #141e30, #243b55);
+  background: linear-gradient(to right, #141e30, #243b55);
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 3rem;
+}
+
+.outcome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: justify;
+  border-bottom: 1px solid white;
+}
+
+.outcome h2 {
+  margin-left: 0.5rem;
+}
+
+.amtbtn {
+  display: flex;
+  align-items: center;
+}
+
+.amtbtn button {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  border: none;
+  padding: 0;
+  background: none;
+}
+
+.amtbtn button:hover {
+  background-color: white;
+}
+
+@media (max-width: 800px) {
+  .combbox {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 10px;
+  }
+
+  .tb input {
+    height: 20px;
+    width: 90px;
+    margin-left: 0.2rem;
+  }
+
+  .btn1 {
+    margin-left: 1px;
+  }
+
+  .box1 {
+    display: flex;
+    width: 85%;
+    overflow: hidden;
+  }
+
+  .price {
+    margin-right: 0rem;
+  }
+  .data {
+    width: 85%;
+    margin-right: 1rem;
+  }
+}
