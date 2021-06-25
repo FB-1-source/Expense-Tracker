@@ -20,7 +20,6 @@ const Main = () => {
     <div>
       <div className="top">
         <h1>TrackMe</h1>
-        <AttachMoneyIcon fontSize="large" />
       </div>
       <div className="combbox">
         <div className="box1">
