@@ -1,7 +1,7 @@
 body {
-  color: white;
+  color: #243b55;
   background-color: #243b55;
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
 }
 
 .top {
@@ -13,6 +13,7 @@ body {
 
 .top h1 {
   font-size: 45px;
+  color: whitesmoke;
 }
 
 .both {
@@ -35,7 +36,6 @@ body {
 .box1 {
   margin-top: 2rem;
   border-style: solid;
-  border-color: white;
   border-radius: 10px;
   margin-right: 1rem;
   display: flex;
@@ -44,9 +44,8 @@ body {
   align-items: center;
   height: 50vh;
   width: 90vh;
-  background: #141e30;
-  background: -webkit-linear-gradient(to right, #243b55, #141e30);
-  background: linear-gradient(to right, #243b55, #141e30);
+  background-color: whitesmoke;
+  border: none;
 }
 
 .tb {
@@ -68,14 +67,13 @@ body {
 .data {
   margin-top: 2rem;
   border-style: solid;
-  border-color: white;
+  border-color: none;
   height: 50vh;
   border-radius: 10px;
   width: 50%;
   overflow: auto;
-  background: #141e30;
-  background: -webkit-linear-gradient(to right, #141e30, #243b55);
-  background: linear-gradient(to right, #141e30, #243b55);
+  background-color: whitesmoke;
+  border: none;
 }
 
 .price {
@@ -90,7 +88,7 @@ body {
   justify-content: space-between;
   align-items: center;
   text-align: justify;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid#243b55;
 }
 
 .outcome h2 {
@@ -112,6 +110,22 @@ body {
 
 .amtbtn button:hover {
   background-color: white;
+  border-radius: 5px;
+}
+
+.mainchart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.chart {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 800px) {
@@ -137,6 +151,8 @@ body {
     display: flex;
     width: 85%;
     overflow: hidden;
+    padding: 0 1rem 0 1rem;
+    margin-bottom: 1rem;
   }
 
   .price {
@@ -144,6 +160,12 @@ body {
   }
   .data {
     width: 85%;
-    margin-right: 1rem;
+    padding: 0 1rem 0 1rem;
+    margin: 0 1rem 1rem 0;
+  }
+
+  .chart {
+    width: 80%;
+    margin-top: -5rem;
   }
 }

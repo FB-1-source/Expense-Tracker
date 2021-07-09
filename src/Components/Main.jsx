@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import AttachMoneyIcon from "@material-ui/icons/AttachMoney";
 import Itemform from "./Itemform";
 import Totalprice from "./Totalprice";
 import Itemlist from "./Itemlist";
+import Chart from "./Chart";
 
 const Main = () => {
   const [newamt, setnewamt] = useState([]);
@@ -31,6 +31,9 @@ const Main = () => {
         <div className="data">
           <Itemlist newamt={newamt} setnewamt={setnewamt} />
         </div>
+      </div>
+      <div>
+        <Chart newamt={newamt} />
       </div>
     </div>
   );
