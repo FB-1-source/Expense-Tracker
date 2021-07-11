@@ -21,17 +21,19 @@ const Main = () => {
       <div className="top">
         <h1>TrackMe</h1>
       </div>
-      <div className="combbox">
-        <div className="box1">
-          <Itemform newamt={newamt} setnewamt={setnewamt} />
-          <div className="price">
-            <Totalprice total={total} />
+      <section>
+        <div className="combbox">
+          <div className="box1">
+            <Itemform newamt={newamt} setnewamt={setnewamt} />
+            <div className="price">
+              <Totalprice total={total} />
+            </div>
+          </div>
+          <div className="data">
+            <Itemlist newamt={newamt} setnewamt={setnewamt} />
           </div>
         </div>
-        <div className="data">
-          <Itemlist newamt={newamt} setnewamt={setnewamt} />
-        </div>
-      </div>
+      </section>
       <div>
         <Chart newamt={newamt} />
       </div>
